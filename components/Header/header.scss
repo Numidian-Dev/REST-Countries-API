@@ -1,0 +1,67 @@
+header {
+    background-color: $White;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    .container-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 85%;
+        margin: auto;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .darkMode {
+        border: none;
+        font-size: 1.1rem;
+        font-weight: 300;
+        background-color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .moon {
+        margin-right: 5px;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    header {
+        background-color: $White;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        .container-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 85%;
+            margin: auto;
+        }
+        h1 {
+            font-size: 1rem;
+        }
+
+        .darkMode {
+            border: none;
+            font-size: 0.9rem;
+            font-weight: 300;
+            background-color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .moon {
+            margin-right: 5px;
+            font-size: 0.9rem;
+        }
+    }
+}
