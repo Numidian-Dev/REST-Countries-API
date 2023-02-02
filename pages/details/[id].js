@@ -57,7 +57,9 @@ const Details = ({ countriesDetails }) => {
                 </p>
                 <p>
                   <span className="name-info">Currencies: </span>
-                  {countrie.currencies[0].name}
+                  {countrie.currencies !== undefined
+                    ? countrie.currencies[0].name
+                    : " "}
                 </p>
                 <p>
                   <span className="name-info">Languages: </span>
