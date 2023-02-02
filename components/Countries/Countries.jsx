@@ -21,19 +21,7 @@ const Countries = () => {
         load();
     }, []);
 
-    console.log(loading
-        ? ""
-        : countries
-            .sort((a, b) => {
-                if (a.name > b.name) {
-                    return -1;
-                }
-                if (a.name < b.name) {
-                    return 1;
-                }
-                return 0;
-            })
-            .slice(Math.max(countries.length - 9, 0)).slice(1))
+
 
     return (
         <div className="container">
